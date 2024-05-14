@@ -14,47 +14,64 @@
         <div class="cabezera">
             <nav id="menu">
                 <ul>
-                    <li class="opcion"><a href="#sobre">[About Me]</a></li>
-                    <li class="opcion"><a href="#caja-proyectos">[Proyects]</a></li>
-                    <li class="opcion"><a href="#contacto">[Contact]</a></li>
+                    <li class="opcion"><a href="#sobre" id="sobreMi-menu">[Sobre Mi]</a></li>
+                    <li class="opcion"><a href="#caja-proyectos" id="proyectos-menu">[Proyectos]</a></li>
+                    <li class="opcion"><a href="#caja-lenguajes" id="conociminetos-menu">[Conociminetos]</a></li>
+                    <li class="opcion"><a href="#contacto" id="contacto-menu">[Contacto]</a></li>
+                    <label class="switch">
+                        <input type="checkbox" id="language-switch">
+                        <span class="slider"></span>
+                    </label>
                 </ul>
+                
             </nav>
             <div class="informacion">
-                <h1>Hi, my name is [Eric Perez]</h1>
-                <p>passionate about cybersecurity</p>
+                <h1 id="informacion-hola">Hola, mi nombre es [Eric Perez]</h1>
+                <p id="informacion-ciberseguridad">apasionada por la ciberseguridad</p>
                 <a href="https://github.com/Sapasus74"><img class="logos" src="Fotos/logos/github-mark-white.png"></a>
                 <a href="https://www.linkedin.com/in/ericperezartero/"><img class="logos"
                         src="Fotos/logos/linkedin logo.png"></a>
-                <a href="Archivos/EricPerezDevCV.pdf" download="EricPerezCV.pdf">
-                    <button onclick="" class="cv">CV</button>
+                <a href="Archivos/EricPerezDevCV.pdf" download="EricPerezDevCV.pdf">
+                    <button class="cv">CV</button>
                 </a>
             </div>
-
             <img id="cabezaflotante" src="Fotos/rotating_head.gif" alt="cabeza.gif">
         </div>
     </header>
     <div id="contenido">
         <section id="sobre">
+            <h2 id="sobre-mi">[Sobre Mi]</h2>
             <div class="presentacion">
-                <h2>[About Me]</h2>
-                <p>¡Hola! Soy Eric Perez, un estudiate de ASIR, hacker ético con experiencia en pruebas de penetración,
-                    análisis
-                    de vulnerabilidades y desarrollo de herramientas de seguridad.</p>
-                <p>Comencé mi viaje en la seguridad informática hace [X años], y desde entonces he trabajado en diversos
-                    proyectos desafiantes y emocionantes.</p>
+                <p id="about-me">Soy un estudiante de Administración de Sistemas Informáticos en Red (ASIR). Me
+                    apasiona el mundo de la ciberseguridad y el hacking ético y estoy comprometido con explorar sus
+                    dificultades y
+                    desafíos. Desde que entré en el mundo de la informática, tuve claro que lo que me interesaba estaba
+                    en asegurar sistemas y proteger la información digital.</p>
             </div>
         </section>
         <div id="caja-proyectos">
-            <h2>[Proyects]</h2>
+            <h2 id="proyectos">[Proyectos]</h2>
             <div class="proyectos">
                 <a href="https://github.com/Sapasus74/FormularioPHP">
                     <div class="proyecto">
                         <img class="foto-proyecto" src="Fotos/proyectos/FormularioPHP.png" alt="Proyecto 1">
-                        <h4>Formulario con Login</h4>
-                        <p>Formulario hecho con PHP creado para proyecto de clase</p>
-                        <img class="creado" src="Fotos/logos/php.png">
-                        <img class="creado" src="Fotos/logos/html.png">
-                        <img class="creado" src="Fotos/logos/css.png">
+                        <h4 id="proyecto-formualario">Formulario con Login</h4>
+                        <p id="formualario-texto">Formulario hecho con PHP creado para proyecto de clase</p>
+                        <div class="contenedor-creados">
+                            <div class="creados">
+                                <img class="creado" src="Fotos/logos/php.png">
+                                <p class="creado-lenguaje">PHP</p>
+                            </div>
+                            <div class="creados">
+                                <img class="creado" src="Fotos/logos/html.png">
+                                <p class="creado-lenguaje">HTML</p>
+
+                            </div>
+                            <div class="creados">
+                                <img class="creado" src="Fotos/logos/css.png">
+                                <p class="creado-lenguaje">CSS</p>
+                            </div>
+                        </div>
                     </div>
                 </a>
                 <a href="#">
@@ -68,38 +85,17 @@
             </div>
         </div>
         <div id="caja-lenguajes">
-            <h2>[Knowledge]</h3>
+            <h2 id="conociminetos">[Conociminetos]</h3>
                 <div class="lenguajes">
-                    <div class="lenguaje">
-                        <div class="nombre">HTML</div>
-                        <div class="barra">
-                            <div class="porcentaje" style="width: 80%;"></div>
-                        </div>
-                        <div class="valor">80%</div>
-                    </div>
-                    <div class="lenguaje">
-                        <div class="nombre">CSS</div>
-                        <div class="barra">
-                            <div class="porcentaje" style="width: 70%;"></div>
-                        </div>
-                        <div class="valor">70%</div>
-                    </div>
-                    <div class="lenguaje">
-                        <div class="nombre">Java</div>
-                        <div class="barra">
-                            <div class="porcentaje" style="width: 50%;"></div>
-                        </div>
-                        <div class="valor">50%</div>
-                    </div>
-                    <div class="lenguaje">
-                        <div class="nombre">SQL</div>
-                        <div class="barra">
-                            <div class="porcentaje" style="width: 50%;"></div>
-                        </div>
-                        <div class="valor">50%</div>
-                    </div>
+                    <img class="foto-lenguajes" src="Fotos/logos/html.png" alt="">
+                    <img class="foto-lenguajes" src="Fotos/logos/css.png" alt="">
+                    <img class="foto-lenguajes" src="Fotos/logos/php.png" alt="">
+                    <img class="foto-lenguajes" src="Fotos/logos/mysql.png" alt="">
+                    <img class="foto-lenguajes" src="Fotos/logos/java.png" alt="">
                 </div>
         </div>
+    </div>
+    <script src="cambiarIdioma.js"></script>
 </body>
 
 </html>

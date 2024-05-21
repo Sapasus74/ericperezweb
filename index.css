@@ -28,7 +28,7 @@ html {
 
 body {
     font-family: Consolas, monospace;
-background-color: #000;
+    background-color: #000;
     color: #fff;
     line-height: 1.6;
 }
@@ -66,11 +66,13 @@ header a {
     margin-top: 75px;
     width: 550px;
     height: auto;
- 
+
 }
 
 #menu {
+    display: flex;
     margin-top: 35px;
+    justify-content: center;
 }
 
 .opcion {
@@ -84,6 +86,56 @@ header a {
 .opcion:hover {
     border-bottom: 2px solid #00ff00;
 }
+
+.cambiarIdioma{
+    display: flex; 
+    margin-left: 30px;
+    
+    
+}
+
+/* Añadir el estilo para el interruptor de idioma */
+
+.switch {
+    margin: 2px 10px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5c5a5a;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #00ff00;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #3b3b3b;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
 
 .informacion {
     float: left;
@@ -133,7 +185,7 @@ header a {
 .presentacion {
     line-height: 1.7;
     padding: 15px 0;
-   
+
 }
 
 h2 {
@@ -179,16 +231,16 @@ p {
     color: #00ff00;
 }
 
-.contenedor-creados{
+.contenedor-creados {
     display: flex;
 }
 
-.creados{
+.creados {
     display: flex;
     align-items: center;
-    background-color: #373535; 
-    border-radius: 5px; 
-    padding: 10px; 
+    background-color: #373535;
+    border-radius: 5px;
+    padding: 10px;
     margin: 7px;
     width: 100px;
     height: 35px;
@@ -222,55 +274,11 @@ p {
     padding: 20px;
     width: 45%;
     flex-wrap: wrap;
-    
+
 }
 
-.foto-lenguajes{
+.foto-lenguajes {
     width: 100px;
     margin: 20px;
 }
-/* Añadir el estilo para el interruptor de idioma */
-
-.switch {
-    margin: 30px;
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #5c5a5a;
-    transition: .4s;
-    border-radius: 34px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
-    background-color: #00ff00;
-    transition: .4s;
-    border-radius: 50%;
-  }
-  
-  input:checked + .slider {
-    background-color: #3b3b3b;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(20px);
-  }
-  
-
-
 

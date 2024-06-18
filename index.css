@@ -35,7 +35,7 @@ body {
 
 
 header h1 {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     color: #00ff00;
     font-size: 36px;
@@ -55,7 +55,6 @@ header a {
 }
 
 .cabezera {
-
     text-align: center;
     width: 90%;
     margin: 0 auto;
@@ -79,7 +78,7 @@ header a {
     padding: 12px;
     margin: -1px;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2pxlid transparent;
     transition: border-bottom 0.3s ease-in-out;
 }
 
@@ -262,6 +261,7 @@ p {
 
 #caja-lenguajes {
     margin-top: 20px;
+    margin-bottom: 20px;
 
 
 }
@@ -282,3 +282,9 @@ p {
     margin: 20px;
 }
 
+#contacto{
+    margin-top: 40px;
+}
+#contenido-contacto{
+    margin: 0;
+}
